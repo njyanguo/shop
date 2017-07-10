@@ -1,0 +1,19 @@
+
+<div id="carousel-gen" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li ng-repeat="advert in advertList" data-target="#carousel-gen" ></li>
+	</ol>
+	<div class="carousel-inner">
+		<div ng-repeat="advert in advertList" class="item" ng-class="{active: $index == 0}">
+			<img alt="{{advert.advTitle}}" src="images/{{advert.advImg}}">
+		</div>
+	</div>
+	<!-- <a class="left carousel-control" href="javascript:void(0);" id="carousel_prev" ng-click="caro_prev()"> 
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+		<span class="sr-only">Previous</span>
+	</a> 
+	<a class="right carousel-control" href="javascript:void(0);" id="carousel_next" data-slide="next" ng-click="caro_next()"> 
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+		<span class="sr-only">Next</span>
+	</a> -->
+</div> 
